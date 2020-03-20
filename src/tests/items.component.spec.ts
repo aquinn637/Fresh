@@ -23,11 +23,10 @@ describe('Renderer E2E', () => {
 
     it('should be defined',  () => {
 
-        nsTestBedRender(ItemsComponent).then((fixture) => {
+        return nsTestBedRender(ItemsComponent).then((fixture) => {
             expect(fixture.componentInstance).toBeTruthy();
         });
 
     });
 
-
-});
+}); 
